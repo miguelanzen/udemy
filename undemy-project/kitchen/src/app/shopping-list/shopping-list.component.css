@@ -1,0 +1,6 @@
+.ingredientButton{
+    list-style: none;
+}
+.ingredientButton a{
+    cursor: pointer;
+}

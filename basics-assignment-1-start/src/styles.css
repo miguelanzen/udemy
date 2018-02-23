@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.message{
+    padding: 15px;
+    color:white;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}

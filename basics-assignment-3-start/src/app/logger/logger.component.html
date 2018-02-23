@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6"><button (click)="onToggleDetails();">Display Details</button>
+      <h3 *ngIf="showDetails">This are the details. Silly right?</h3></div>
+    <div class="col-xs-6">
+      <h3>Times clicked: {{timesClicked}}</h3>
+      <div *ngFor="let timeStamp of eachClick; let i = index">
+        <p [ngStyle]="{ backgroundColor : i >= 5 ? '#00ACC1' : 'none' }" [ngClass]="{after4: i >= 5 }">Clicked at {{timeStamp}}</p>
+      </div>
+    </div>
+  </div>
+</div>

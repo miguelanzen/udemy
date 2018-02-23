@@ -1,0 +1,9 @@
+<p>Server List:</p>
+
+<input [(ngModel)]="serverName">
+
+<p *ngIf="serverCreated">Sever {{serverName}} was created</p>
+
+<button (click)="onServerCreated()">Create Server</button>
+
+<app-server *ngFor="let server of servers"></app-server>
